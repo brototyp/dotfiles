@@ -26,4 +26,4 @@ create_symlink_if_not_exists "$PWD/.zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
 create_symlink_if_not_exists "$PWD/.zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
 create_symlink_if_not_exists "$PWD/.zshrc" "${ZDOTDIR:-$HOME}/.zshrc"
 
-create_symlink_if_not_exists "$PWD/prompt_superlinh_setup" "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/functions/prompt_superlinh_setup"
+create_symlink_if_not_exists "$PWD/prompt_brototyp_setup" "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/functions/prompt_brototyp_setup"

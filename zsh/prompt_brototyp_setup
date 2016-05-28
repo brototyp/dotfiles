@@ -1,33 +1,24 @@
-#
-# A simple theme that displays relevant, contextual information.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-# Screenshots:
-#   http://i.imgur.com/nBEEZ.png
-#
 
 # Load dependencies.
 pmodload 'helper'
 
-function prompt_sorin_pwd {
+function prompt_brototyp_pwd {
   local pwd="${PWD/#$HOME/~}"
 
   if [[ "$pwd" == (#m)[/~] ]]; then
-    _prompt_sorin_pwd="$MATCH"
+    _prompt_brototyp_pwd="$MATCH"
     unset MATCH
   else
-    _prompt_sorin_pwd="${${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}//\%/%%}/${${pwd:t}//\%/%%}"
+    _prompt_brototyp_pwd="${${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}//\%/%%}/${${pwd:t}//\%/%%}"
   fi
 }
 
-function prompt_sorin_precmd {
+function prompt_brototyp_precmd {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
 
   # Format PWD.
-  prompt_sorin_pwd
+  prompt_brototyp_pwd
   # Get Git repository information.
   if (( $+functions[git-info] )); then
     git-info
@@ -49,7 +40,7 @@ function prompt_sorin_precmd {
   fi
 }
 
-function prompt_sorin_setup {
+function prompt_brototyp_setup {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
   prompt_opts=(cr percent subst)
@@ -58,7 +49,7 @@ function prompt_sorin_setup {
   autoload -Uz add-zsh-hook
 
   # Add hook for calling infos before each command.
-  add-zsh-hook precmd prompt_sorin_precmd
+  add-zsh-hook precmd prompt_brototyp_precmd
 
   # Set editor-info parameters.
   zstyle ':prezto:module:editor:info:completing' format '%B%F{red}...%f%b'
@@ -96,10 +87,10 @@ function prompt_sorin_setup {
 
   # Define prompts.
   PROMPT='
-%F{113}%n@%m%f %F{208}λ%f %F{cyan}${_prompt_sorin_pwd}%f ${ruby_info[version]} ${node_info[version]} %F{70}${PYTHON_DIST}%f ${python_info[virtualenv]}
+%F{113}%n@%m%f %F{208}λ%f %F{cyan}${_prompt_brototyp_pwd}%f ${ruby_info[version]} ${node_info[version]} %F{70}${PYTHON_DIST}%f ${python_info[virtualenv]}
 %(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
   RPROMPT='${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]} ${git_info:+${(e)git_info[prompt]}}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }
 
-prompt_sorin_setup "$@"
+prompt_brototyp_setup "$@"
