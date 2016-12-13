@@ -4,15 +4,16 @@ tap 'caskroom/versions'
 
 brew 'imagemagick'
 brew 'zsh'
+brew 'youtube-dl'
+brew 'npm'
 
-cask 'sublime-text3'
-cask '1password'
+cask 'sublime-text'
 cask 'google-chrome'
 cask 'alfred'
 cask 'dropbox'
 cask 'handbrake'
 cask 'firefox'
-cask 'mou'
+cask 'macdown'
 cask 'kaleidoscope'
 cask 'sequel-pro'
 cask 'skype'
@@ -39,8 +40,7 @@ cask 'omnioutliner'
 # cask 'parallels-desktop9' # there is no cask for version 9 right now
 # cask 'paw' # i don't have a private license right now
 cask 'screenhero'
-cask 'simpholders'
-cask 'slack'
+cask 'slack', args: {'force' => 'true'}
 cask 'steam'
 cask 'teamviewer'
 cask 'utorrent'
@@ -48,9 +48,14 @@ cask 'seafile-client'
 cask 'postman'
 cask 'safari-technology-preview'
 
-mas 'outBank', id: 775678532
+cask 'sketch'
+cask 'skitch'
+cask 'macx-youtube-downloader'
+
 mas 'Xcode', id: 497799835
-mas 'Soulver', id: 348142037
+mas 'Soulver', id: 413965349
+mas '1password', id: 443987910
+
 
 #cask 'seafile-client'
 
