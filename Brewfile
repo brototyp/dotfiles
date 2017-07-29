@@ -48,9 +48,13 @@ cask 'seafile-client'
 cask 'postman'
 cask 'safari-technology-preview'
 
+cask 'spectacle'
+
 cask 'sketch'
 cask 'skitch'
 cask 'macx-youtube-downloader'
+
+cask 'moneymoney'
 
 mas 'Xcode', id: 497799835
 mas 'Soulver', id: 413965349
