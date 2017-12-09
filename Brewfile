@@ -6,6 +6,8 @@ brew 'imagemagick'
 brew 'zsh'
 brew 'youtube-dl'
 brew 'npm'
+brew 'tldr'
+brew 'syncthing' # Resilio Sync like synchronization https://syncthing.net
 
 cask 'sublime-text'
 cask 'google-chrome'
@@ -53,7 +55,6 @@ cask 'spectacle'
 cask 'sketch'
 cask 'skitch'
 cask 'macx-youtube-downloader'
-cask 'syncthing' # Resilio Sync like synchronization https://syncthing.net
 
 cask 'moneymoney'
 
