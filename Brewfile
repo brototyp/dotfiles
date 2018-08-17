@@ -21,8 +21,8 @@ cask 'sequel-pro'
 cask 'skype'
 cask 'sonos'
 cask 'spotify'
-cask 'things'
-cask 'tower'
+cask 'thingsmacsandboxhelper'
+cask 'tower2'
 cask 'transmit'
 cask 'unrarx'
 # cask 'panic-unison' # this cask is broken
@@ -36,7 +36,7 @@ cask 'arq'
 cask 'charles'
 cask 'coderunner'
 cask 'dash'
-cask 'gpgtools'
+cask 'gpg-suite'
 cask 'mamp'
 cask 'omnioutliner'
 # cask 'parallels-desktop9' # there is no cask for version 9 right now
@@ -57,6 +57,11 @@ cask 'skitch'
 cask 'macx-youtube-downloader'
 
 cask 'moneymoney'
+cask 'timings'
+cask 'grandtotal'
+
+cask 'gfxcardstatus'
+cask 'turbo-boost-switcher'
 
 mas 'Xcode', id: 497799835
 mas 'Soulver', id: 413965349
