@@ -11,7 +11,7 @@ git clone https://github.com/brototyp/dotfiles.git
 `~/dotfiles/osx`
 
 ## Install and setup zsh
-`~/dotfiles/zsh/zpresto_install.sh`
+`cd ~/dotfiles/zsh; ./zpresto_install.sh`
 
 ## Change shell to zsh
 `chsh -s /bin/zsh`
