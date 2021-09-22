@@ -71,3 +71,5 @@ cask 'turbo-boost-switcher'
 #cask 'seafile-client'
 
 #cask 'microsoft-office'
+
+cask 'xcodes'
