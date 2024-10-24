@@ -18,19 +18,17 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
+  'syntax-highlighting' \
   'history-substring-search' \
   'directory' \
   'spectrum' \
   'utility' \
-  'completion' \
-  'homebrew' \
   'osx' \
-  'git' \
-  'node' \
-  'syntax-highlighting' \
-  'tmux' \
-  'utility' \
+  'completion' \
   'prompt'
+#  'homebrew' \ # slow, ~150ms
+#  'git' \ # slightly slower, ~30ms
+#  'node' \ # broken, starts node directly
 
 #
 # Autosuggestions
@@ -44,7 +42,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -77,13 +75,6 @@ zstyle ':prezto:module:history-substring-search:color' not-found ''
 zstyle ':prezto:module:history-substring-search' globbing-flags ''
 
 #
-# Pacman
-#
-
-# Set the Pacman frontend.
-# zstyle ':prezto:module:pacman' frontend 'yaourt'
-
-#
 # Prompt
 #
 
@@ -91,13 +82,6 @@ zstyle ':prezto:module:history-substring-search' globbing-flags ''
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'brototyp'
-
-#
-# Ruby
-#
-
-# Auto switch the Ruby version on directory change.
-# zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
 # Screen
