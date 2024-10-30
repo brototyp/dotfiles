@@ -24,8 +24,10 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'osx' \
+  'archive' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'autosuggestions'
 #  'homebrew' \ # slow, ~150ms
 #  'git' \ # slightly slower, ~30ms
 #  'node' \ # broken, starts node directly
